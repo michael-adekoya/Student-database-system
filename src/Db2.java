@@ -14,7 +14,7 @@ public class Db2 extends javax.swing.JFrame {
     void createConnection(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","Arsenal.232312");//
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","username","Password");//Enter your database username and password here
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(DatabaseProject.class.getName()).log(Level.SEVERE, null, ex);
         }
